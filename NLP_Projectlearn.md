@@ -151,6 +151,7 @@ Kết luận: hàm kích hoạt sigmoid đưa bài toán phân loại đa nhãn 
     - ```X_train_val, X_test, y_train_val, y_test = train_test_split(X, y, test_size=0.15, random_state=42)``` : Tách tập dữ liệu thành hai phần: tập train và validate chiếm 85% và tập test chiếm 15%.
     - ```X_train, X_val, y_train, y_val = train_test_split(X_train_val, y_train_val, test_size=0.1765, random_state=42)``` : Tách tập train và validate thành hai phần: tập train chiếm 82.35% và tập validate chiếm 17.65%.
     - ```def process_features(X_train, X_test):``` : Hàm để xử lí đặc trưng
+
     a. TF-IDF Vectorizer (Term Frequency-Inverse Document Frequency) cho description:
         - TF-IDF Vectorizer là một kỹ thuật được sử dụng để chuyển đổi các văn bản thành các vectơ số để có thể sử dụng trong các mô hình học máy.
         - Kỹ thuật này được sử dụng để đánh giá mức độ quan trọng của một từ trong một tài liệu trong một tập hợp các tài liệu. Nó tính toán tần suất của một từ trong một tài liệu (Term Frequency) và sau đó điều chỉnh giá trị này bằng cách sử dụng Inverse Document Frequency, là một giá trị giảm dần dựa trên tần suất của từ đó trong toàn bộ tập hợp tài liệu. [Chi tiết các parameter](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) 
